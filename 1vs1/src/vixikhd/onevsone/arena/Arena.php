@@ -199,6 +199,11 @@ class Arena implements Listener {
         }
 
         $player->removeAllEffects();
+        
+        $player->getInventory()->clearAll();
+        $player->getArmorInventory()->clearAll();
+        $player->getCursorInventory()->clearAll();
+
 
         $player->setGamemode($this->plugin->getServer()->getDefaultGamemode());
 
