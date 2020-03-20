@@ -205,10 +205,6 @@ class Arena implements Listener {
         $player->setHealth(20);
         $player->setFood(20);
 
-        $player->getInventory()->clearAll();
-        $player->getArmorInventory()->clearAll();
-        $player->getCursorInventory()->clearAll();
-
         $player->teleport($this->plugin->getServer()->getDefaultLevel()->getSpawnLocation());
 
         if(!$death) {
