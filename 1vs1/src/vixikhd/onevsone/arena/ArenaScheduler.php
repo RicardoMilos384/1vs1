@@ -103,10 +103,6 @@ class ArenaScheduler extends Task {
                         foreach ($this->plugin->players as $player) {
                             $player->teleport($this->plugin->plugin->getServer()->getDefaultLevel()->getSpawnLocation());
 
-                            $player->getInventory()->clearAll();
-                            $player->getArmorInventory()->clearAll();
-                            $player->getCursorInventory()->clearAll();
-
                             $player->setFood(20);
                             $player->setHealth(20);
 
